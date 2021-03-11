@@ -35,12 +35,11 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【快看点】'
+      - name: '运行 【聚看点】'
         run: |
-          node kkd.js
+          node jkd.js
         env:
-          KKDHEADER: ${{ secrets.KKDHEADER }}
-          KKDCOOKIE: ${{ secrets.KKDCOOKIE }}
+          JKD_COOKIE: ${{ secrets.JKD_COOKIE }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
